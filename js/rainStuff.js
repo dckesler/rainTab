@@ -22,7 +22,7 @@ $(document).ready(function(){
     var rainDropGroups = [];
     function makeRainGroup (){
         var group = [];
-        for(var i = 0; i < rains/2600; i++){
+        for(var i = 0; i < rains/2800; i++){
             group.push(new RainDrop(canvas.width))
         }
         rainDropGroups.push(group);
@@ -54,7 +54,7 @@ $(document).ready(function(){
 
         }
         function drawRain(raindrop, oldElement){
-            context.fillStyle = "HSL(33, 38%, 8%)";
+            context.fillStyle = "HSL(33, 38%, 7%)";
             context.fillRect(oldElement.x - 1, oldElement.y - 1, 4, raindrop.size + 2);
             var grd = context.createRadialGradient(250, 550, 140, 250, 600, 650);
             grd.addColorStop(0, 'HSL(33, 38%, 24%)');
