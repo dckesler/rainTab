@@ -67,14 +67,9 @@
 }
 .time div {
     display: inline-block;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 .date {
     text-align: center;
-    font-size: 2rem;
-}
-
-.angClock {
-    position: absolute;
-    color: navajowhite;
+    font-size: 1.5rem;
 }

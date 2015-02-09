@@ -98,6 +98,9 @@
                             break;
                     }
                     clockers.hour = clockers.hour % 12;
+                    if(!clockers.hour){
+                        clockers.hour = 12;
+                    }
 
                     for(var key in clockers) {
                         if ((clockers[key] + "").length === 1 && key !== "day" && key !== "ofWeek" && key !== "hour") {

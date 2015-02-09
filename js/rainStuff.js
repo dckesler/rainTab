@@ -7,7 +7,6 @@ $(document).ready(function(){
         canvas.width = document.body.clientWidth;
         canvas.height = window.innerHeight - 75;
         rains = canvas.width * canvas.height;
-        console.log(rains);
     };
     var context = canvas.getContext('2d');
     var RainDrop = function(width){
@@ -56,11 +55,11 @@ $(document).ready(function(){
         function drawRain(raindrop, oldElement){
             context.fillStyle = "HSL(33, 38%, 7%)";
             context.fillRect(oldElement.x - 1, oldElement.y - 1, 4, raindrop.size + 2);
-            var grd = context.createRadialGradient(250, 550, 140, 250, 600, 650);
-            grd.addColorStop(0, 'HSL(33, 38%, 24%)');
-            grd.addColorStop(0.1, 'HSL(33, 38%, 20%)');
-            grd.addColorStop(0.2, 'HSL(33, 38%, 16%)');
-            grd.addColorStop(1, 'HSL(33, 38%, 15%)');
+            var grd = context.createRadialGradient(250, canvas.height - 300, 140, 250, canvas.height - 400, 650);
+            grd.addColorStop(0, 'HSL(33, 38%, 30%)');
+            grd.addColorStop(0.1, 'HSL(33, 38%, 21%)');
+            grd.addColorStop(0.2, 'HSL(33, 38%, 15%)');
+            grd.addColorStop(1, 'HSL(33, 38%, 14%)');
             context.fillStyle = grd;
             context.fillRect(raindrop.x, raindrop.y, 2, raindrop.size);
         }
