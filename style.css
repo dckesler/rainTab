@@ -1,0 +1,80 @@
+.night {
+    background: HSL(33, 38%, 8%);
+}
+.road {
+    width:100%;
+    position: absolute;
+    bottom: 0;
+}
+.road-top {
+    height: 10px;
+    width: 100%;
+    background: HSL(345, 6%, 5.5%);
+}
+.road-bot {
+    height: 65px;
+    width: 100%;
+    background: HSL(345, 6%, 5%);
+}
+.post {
+    position: absolute;
+    bottom: 65px;
+    left: 250px;
+}
+.glass {
+    position: absolute;
+    bottom: 457px;
+    left: 258px;
+    opacity: .7;
+
+}
+.light {
+    opacity: 0;
+    position: fixed;
+    bottom: -130px;
+    left: 30px;
+    animation: rotate .8s linear 0s infinite alternate;
+    -webkit-animation: rotate .8s linear 0s infinite alternate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
+
+#clock {
+    position: absolute;
+    opacity: 0;
+    right: 200px;
+    top: 100px;
+    color: navajowhite;
+
+}
+.time {
+    text-align: center;
+}
+.time div {
+    display: inline-block;
+    font-size: 6rem;
+}
+.date {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.angClock {
+    position: absolute;
+    color: navajowhite;
+}
